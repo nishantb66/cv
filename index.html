@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nishant's Personal Site</title>
+  </head>
+  <body>
+    <table cellspacing="20"> <!--Herw we have used the table tag to style our image and the intro text of the website so that our image gets aligned to the left and the intro to the right side, whereas this styleing can also be done by using CSS but as we have not learned so this we have done using pure html-->
+      <tr>
+        <td><img src="image.png" alt="Nishant's profile picture"></td> <!--This is an imgage tag to add an image in the website and we are using the using the "src" and the "alt" attribute to insert the link and write the name if by chance the image does'nt appear-->
+        <td><h1>Nishant Baruah</h1>
+        <p><em>An undergraduate student at <strong><a href="http://www.nmims.edu">NMIMS</a></strong></em></p> <!--The "em" tag is not only used to italisied the text but it also puts stress and emphasize the text unlike the "i" tag; similarly we should use "strong" tag instead of bold tag-->
+        <p>I am a BTech student persuing Computer Engineering. I love coffee and coding</p>
+        </td>
+      </tr>
+    </table>
+    <hr> <!--This tag is used to add a horizontal line-->
+    <h3>Education and Schools</h3>
+    <ul>          <!--This is the method of adding an unordered list and bellow is an example of nested unordered list-->
+      <li>Delhi Public School
+        <ul>
+          <li>Upto class 3rd</li>
+        </ul>
+      </li>
+      <li>KVS Navi Mumbai
+        <ul>
+          <li>Upto class 9th</li>
+        </ul>
+      </li>
+      <li>Allen Career Institute
+        <ul>
+          <li>11th and 12th (Science PCM)</li>
+        </ul>
+      </li>
+    </ul>
+    <!--The bellow we have used the "menu" list and its same as the unordered list "ul"-->
+    <!-- <menu>
+      <li>Tape here</li>
+    </menu> -->
+    <h3>Work experience</h3>
+    <!--
+    <table>
+      <tr>
+        <th>Dates</th> Here we have table head tag that is the heading tag in the table.
+        <th>Works</th>
+      </tr>
+      <tr>
+        <td>2018-2020</td>
+        <td>High school PCM</td>
+      </tr>
+      <tr>
+        <td>2021-2022</td>
+        <td>BTech Computer Engineering</td>
+      </tr>
+    </table>
+  -->
+    <!--The above table can be also written as:--->
+    <table>
+      <thead> <!--The heading or the header cell are placed inside the thead -->
+        <tr>
+          <th>Dates</th>
+          <th>Works</th>
+        </tr>
+      </thead>
+      <tbody> <!--Under this main body we will add the content of the table in rows and then making data or cell in each rows-->
+        <tr>
+          <td>2018-2020</td>
+          <td>High School PCM</td>
+        </tr>
+        <tr>
+          <td>2021-2025</td>
+          <td>BTech Computer Eng.</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>NMIMS Tech Fest organising commitee</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Skills</h3>
+    <table> <!--From here bellow there is nested table in which we have listed our skill ratings on a scale of five. This nested table can be understood as there are table inside a data or a cell.-->
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>C++</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>DSA</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>Development</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td>Project</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <hr>
+    <a href="hobbies.html">My hobbies</a> <!--We have seperately created a html file for hobbies that we have linked to the homepage by using the "a" tag-->
+    <br>
+    <a href="contact.html">Contact me</a> <!--We have done the same for the contact part.-->
+  </body>
+</html>
+<!--10th line: The "a" tag that we have used is the method to insert links in our website
+and the "href" is the attribute where we can write the link , clicking on NMIMS will direct it to nmims website.-->
