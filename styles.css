@@ -1,0 +1,55 @@
+/* Below we will incude the style css code under that we will yell which part of the code is to be styled */
+body {
+  background-color: #EAF6F6;      /*This will change the color of the background*/
+}
+
+hr {
+  background-color: white;
+  border-style: dotted none none none; /*This indicated that top is dotted and the rest bottom, left and right are all none by this dotted style will ony be applyied to the top*/
+  /*border-top-style: dotted;*/            /*This is an alternate methode to just apply the dotted style to just top and similarly we can do it in all dimensions*/
+  /* height: 1px; */
+  border-width: 5px;  /*this changes the size of the dotes of the dotted line*/
+  border-color: grey; /*by this element we can change the color of the border hence the dotes*/
+  width: 13%;
+}
+/* We have add the height as to recognise the white line so that we can atleat see it
+if we don not give the height then the line will not be visible to us as the white height will
+be zero.
+We have also changed the default border style of the browser and that is nessasery
+We can apply the height to any element in the code as we have seen that all the elements in the
+code are just boxes. */
+
+h1{
+  color: #66BFBF;
+}
+h3{
+  color: #66BFBF;
+}
+h2{
+  color: #66BFBF;
+}
+
+img{
+  border-radius: 100%;
+}
+/*making the image circular*/
+
+/*the "hover" is used as when we hover to the text of the element in the
+website then that particular color will hilight the element. */
+h1:hover{
+  color: #2F8F9D;
+}
+h3:hover{
+  color: #2F8F9D;
+}
+h2:hover{
+  color: #2F8F9D;
+}
+a:hover{
+  color: #37E2D5;
+}
+
+
+a:active{
+  color: #3BACB6;
+}
