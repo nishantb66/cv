@@ -1,141 +1,78 @@
 <!DOCTYPE html>
-<html lang="" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Nishant's Personal Site</title>
-    <!-- <style media="screen">
-      /*The content in the external css file*/
-    </style> -->
+    <title>Nishant Baruah</title>
+    <link rel="stylesheet" href="css/styles.css">
 
-    <link rel="stylesheet" href="styles.css">  <!--EXTERNAL CSS:The link says that under the css file there is a file named "styles.css"-->
+    <!--Bellow we are adding a icon for our site-->
+    <link rel="icon" href="favicon2.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet">
+      <!--The above three links are for fonts that we embeding that we have taken from
+      the "google fonts".-->
 
   </head>
+  <body>
+
+    <!--this bellow is a new html element we are using to make a seperate
+  division for our name and preofession-->
+    <div class="top-container">
+      <img class="top-cloud" src="images/cloud.png" alt="cloud-img"> <!--we have added the images in the div-->
+      <h1>I'm Nishant</h1>
+      <p class="para1"><em><h2>an undergraduate programmer</h2></em></p>
+      <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+      <img src="https://web.archive.org/web/20180819202235/http://seanhalpin.io/assets/img/content/home/masthead/land.svg" alt="mountain-img">
+    </div>
 
 
+    <div class="middle-container">
+      <div class="profile">
+        <img class="my-pic" src="https://web.archive.org/web/20180819202235js_/http://seanhalpin.io/assets/img/content/home/hello/me.svg" alt="profile-pic">
+        <h2>Hello.</h2>
+        <p>I'm a programmer / student based in Mumbai.</p><p>I have a passion for development,programming and love to create for web and
+        mobile devices..</p><p>I'm currently pursuing Btech Computer Engineering at NMIMS university</p>
+      </div><br><br><br>
+      <hr><br><br><br>
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="image1" src="skills image-modified.png" alt="">
+          <h3>Programming</h3>
+          <p class="pro1">I like to keep it simple. My goals are to focus on language programming,</p><p>content and conveying the message that you want to send.</p>
+          <p class="pro2">I can do programming in c/c++</p>
+        </div>
+        <div class="skill-row"><br><br>
+          <img class="image2" src="professional-web-design-and-custom-web-development-services-in-dubai-modified-modified.png" alt="">
+          <h3>Development</h3>
+          <p class="web">I'm a developer too, so I know how to create your website</p><p>to run across devices using the latest technologies available.</p>
+        </div>
+      </div><br><br><br>
+      <hr><br><br><br>
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>I’m currently available for freelance work.</h3>
+        <p>If you have a project that you want to get started,</p><p>think you need my help with something or just fancy saying hey, then
+        get in touch.</p><br><br><br>
+        <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+      </div>
+    </div>
+    
+    
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/nishant-baruah-71141a226/"><strong>LinkedIn</strong></a>
+      <a class="footer-link" href="https://twitter.com/Nishant03129296"><strong>Twitter</strong></a>
+      <a class="footer-link" href=""><strong>Website</strong></a>
+      <br>
+      <p class="rights"><strong>© Nishant Baruah.</strong></p>
+    </div>
 
-  <body> <!--<body style= "background-color: blue";>-->
-    <table cellspacing="20"> <!--Herw we have used the table tag to style our image and the intro text of the website so that our image gets aligned to the left and the intro to the right side, whereas this styleing can also be done by using CSS but as we have not learned so this we have done using pure html-->
-      <tr>
-        <td><img src="image.png" alt="Nishant's profile picture"></td> <!--This is an imgage tag to add an image in the website and we are using the using the "src" and the "alt" attribute to insert the link and write the name if by chance the image does'nt appear-->
-        <td><h1>Nishant Baruah</h1>
-        <p><em>An undergraduate student at <strong><a href="http://www.nmims.edu">NMIMS</a></strong></em></p> <!--The "em" tag is not only used to italisied the text but it also puts stress and emphasize the text unlike the "i" tag; similarly we should use "strong" tag instead of bold tag-->
-        <p>I am a BTech student persuing Computer Engineering. I love coffee and coding</p>
-        </td>
-      </tr>
-    </table>
-    <hr> <!--This tag is used to add a horizontal line-->
-    <h3>Education and Schools</h3>
-    <ul>          <!--This is the method of adding an unordered list and bellow is an example of nested unordered list-->
-      <li>Delhi Public School
-        <ul>
-          <li>Upto class 3rd</li>
-        </ul>
-      </li>
-      <li>KVS Navi Mumbai
-        <ul>
-          <li>Upto class 9th</li>
-        </ul>
-      </li>
-      <li>KVS ioc
-        <ul>
-          <li>10th boards</li>
-        </ul>
-      </li>
-      <li>Allen Career Institute
-        <ul>
-          <li>11th and 12th (Science PCM)</li>
-        </ul>
-      </li>
-    </ul>
-    <hr>
-    <!--The bellow we have used the "menu" list and its same as the unordered list "ul"-->
-    <!-- <menu>
-      <li>Tape here</li>
-    </menu> -->
-    <h3>Work experience</h3>
-    <!--
-    <table>
-      <tr>
-        <th>Dates</th> Here we have table head tag that is the heading tag in the table.
-        <th>Works</th>
-      </tr>
-      <tr>
-        <td>2018-2020</td>
-        <td>High school PCM</td>
-      </tr>
-      <tr>
-        <td>2021-2022</td>
-        <td>BTech Computer Engineering</td>
-      </tr>
-    </table>
-  -->
-    <!--The above table can be also written as:--->
-    <table>
-      <thead> <!--The heading or the header cell are placed inside the thead -->
-        <tr>
-          <th>Dates</th>
-          <th>Works</th>
-        </tr>
-      </thead>
-      <tbody> <!--Under this main body we will add the content of the table in rows and then making data or cell in each rows-->
-        <tr>
-          <td>2018-2020</td>
-          <td>High School PCM</td>
-        </tr>
-        <tr>
-          <td>2021-2025</td>
-          <td>BTech Computer Eng.</td>
-        </tr>
-        <tr>
-          <td>2022</td>
-          <td>NMIMS Tech Fest organising commitee</td>
-        </tr>
-      </tbody>
-    </table>
-    <h3>Skills</h3>
-    <table> <!--From here bellow there is nested table in which we have listed our skill ratings on a scale of five. This nested table can be understood as there are table inside a data or a cell.-->
-      <tr>
-        <td>
-          <table>
-            <tr>
-              <td>C++</td>
-              <td>⭐⭐⭐⭐</td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table>
-            <tr>
-              <td>DSA</td>
-              <td>⭐⭐⭐⭐</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table>
-            <tr>
-              <td>Development</td>
-              <td>⭐⭐⭐</td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table>
-            <tr>
-              <td>Project</td>
-              <td>⭐⭐⭐⭐</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <hr>
-    <a href="hobbies.html">My hobbies</a> <!--We have seperately created a html file for hobbies that we have linked to the homepage by using the "a" tag-->
-    <br>
-    <a href="contact.html">Contact me</a> <!--We have done the same for the contact part.-->
+
   </body>
 </html>
-<!--10th line: The "a" tag that we have used is the method to insert links in our website
-and the "href" is the attribute where we can write the link , clicking on NMIMS will direct it to nmims website.-->
+
+
+

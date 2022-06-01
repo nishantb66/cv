@@ -1,55 +1,152 @@
-/* Below we will incude the style css code under that we will yell which part of the code is to be styled */
+
+/*setting the mesurements acc to our will so that we can oer the browser default settings*/
 body {
-  background-color: #EAF6F6;      /*This will change the color of the background*/
+  margin: 0px;
+  text-align: center;
+  /*here we have used the text align property of css to centralise the whole content
+  of the body*/
+  font-family: 'Merriweather', serif;
+}
+h1 {
+  margin: 50px 0 0 0;
+  /* margin-bottom: 0; */
+  /* width: 10%;
+  margin: 0 auto 0 auto; */
+  font-family: 'Sacramento', cursive; /*from google fonts*/
+  font-size: 5.625rem;  /*********1em = 100% = 16px*********/
+  color: #3BACB6;
+}
+
+.para1 {
+  color: #3BACB6;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #1b929d;
+  font-weight: normal;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #1b929d;
+}
+/*in the above code we have use the margin technique to centralise our text and
+note that if we use "auto" then it by default centralise that element*/
+
+.top-container {
+  background-color: #E4F9F5;
+  margin-top: 0px;
+  padding: 100px 0 0 0;
+}
+
+.middle-container {
+  /* background-color: aliceblue; */
+  padding: 0 0 30px 0;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  /*by this position the cloud will move to the center up by default
+  and due to this the mountain has came to the middle of the page*/
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+  /*The above setting is done to bring the top cloud to that position as it 
+  sown in the site*/
+}
+
+a{
+  color: #1b848e;
+  font-family: sans-serif;
+  text-decoration: none;
 }
 
 hr {
   background-color: white;
-  border-style: dotted none none none; /*This indicated that top is dotted and the rest bottom, left and right are all none by this dotted style will ony be applyied to the top*/
-  /*border-top-style: dotted;*/            /*This is an alternate methode to just apply the dotted style to just top and similarly we can do it in all dimensions*/
+  border-style: dotted none none none;
+  /*This indicated that top is dotted and the rest bottom, left and right are all none by this dotted style will ony be applyied to the top*/
+  /*border-top-style: dotted;*/
+  /*This is an alternate methode to just apply the dotted style to just top and similarly we can do it in all dimensions*/
   /* height: 1px; */
-  border-width: 5px;  /*this changes the size of the dotes of the dotted line*/
-  border-color: grey; /*by this element we can change the color of the border hence the dotes*/
-  width: 13%;
-}
-/* We have add the height as to recognise the white line so that we can atleat see it
-if we don not give the height then the line will not be visible to us as the white height will
-be zero.
-We have also changed the default border style of the browser and that is nessasery
-We can apply the height to any element in the code as we have seen that all the elements in the
-code are just boxes. */
-
-h1{
-  color: #66BFBF;
-}
-h3{
-  color: #66BFBF;
-}
-h2{
-  color: #66BFBF;
+  border-width: 5px;
+  /*this changes the size of the dotes of the dotted line*/
+  border-color: #999d9d;
+  /*by this element we can change the color of the border hence the dotes*/
+  width: 8%;
+  line-height: 2;
 }
 
-img{
-  border-radius: 100%;
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto; /*this done to bring the both skill rows to the center*/
+  text-align: left;
+  line-height: 2;
 }
-/*making the image circular*/
 
-/*the "hover" is used as when we hover to the text of the element in the
-website then that particular color will hilight the element. */
-h1:hover{
-  color: #2F8F9D;
+.image1 {
+  width: 25%;
+  float: left;         /*using the float property to wrap the text to the left of the image*/
+  margin-right: 30px;
 }
-h3:hover{
-  color: #2F8F9D;
+
+.image2 {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
 }
-h2:hover{
-  color: #2F8F9D;
-}
-a:hover{
-  color: #37E2D5;
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding-top: 100px;           /**to creat space between the middle container and the bottom container**/
 }
 
 
-a:active{
-  color: #3BACB6;
+/**creating the button FOR CONTACT ME**/
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 7px 20px 8px 16px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.footer-link {
+  padding: 15px;
+}
+
+.rights {
+  font-size: small;
+  color: #EAF6F6;
+}
+
+.pro1 {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 5px;
 }
